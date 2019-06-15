@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+class ToolController extends Controller
+{
+    public static function echoMsg($errcode,$msg,$data=''){
+        echo json_encode(['errcode'=>$errcode,'msg'=>$msg,'data'=>$data],JSON_UNESCAPED_UNICODE);
+    }
+}
