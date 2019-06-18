@@ -14,8 +14,8 @@ $router->post('test_rsa','TestController@test_rsa');
 $router->post('signature','TestController@signature');
 
 
-$router->post('/reg','LoginController@reg');//注册
-$router->post('/login','LoginController@login');//登陆
-$router->post('/islogin','LoginController@islogin');//登陆
+$router->post('reg','LoginController@reg');//注册
+$router->post('login1','LoginController@login');//登陆
+$router->post('islogin','LoginController@islogin');//登陆
 
 
