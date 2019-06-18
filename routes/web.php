@@ -6,7 +6,10 @@ $router->get('/',function(){
 //$router->post('user/create','UserController@create');
 //$router->post('user/update','UserController@update');
 //$router->post('user/weather','UserController@weather');
-
+// 生成APP_KEY
+$router->get('/key', function() {
+    return str_random(32);
+});
 $router->get('guzzle/get','TestController@get');
 $router->post('guzzle/post','TestController@post');
 $router->post('guzzle/file','TestController@file');
